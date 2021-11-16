@@ -113,11 +113,10 @@ function payplus_storeremote($params)
             $removeToken->Init([
                 'uid' => $params['remoteStorageToken']
             ]);
-            if ($removeToken->Go()->IsSuccess()) {
-                return [
-                    'status' => 'success'
-                ];
-            }
+            $removeToken->Go();
+            return [
+                'status' => 'success'
+            ];
             break;
         case REMOTE_STORE_ACTION_UPDATE:
             $updateToken = new Update;

@@ -4,6 +4,8 @@ namespace PayplusGateway\PayplusApi\Tokens;
 
 use PayplusGateway\PayplusApi\PayplusBase;
 
+use function PayplusGateway\dd;
+
 class Remove extends PayplusBase{
     public $uid;
     public $success = false;
