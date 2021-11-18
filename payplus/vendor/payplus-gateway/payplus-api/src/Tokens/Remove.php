@@ -4,12 +4,10 @@ namespace PayplusGateway\PayplusApi\Tokens;
 
 use PayplusGateway\PayplusApi\PayplusBase;
 
-use function PayplusGateway\dd;
-
 class Remove extends PayplusBase{
     public $uid;
     public $success = false;
-    protected function GetCommandAndMethod(): object
+    protected function GetCommandAndMethod()
     {
         return (object)[
             'command'=>'Token/Remove/' . $this->uid,

@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "payplus-gateway/payplus-api",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ZevWisegroup/payplus-api.git",
-                "reference": "8cc350251aaf5ebc8ee0f2aabeb9a22791b16a01"
+                "reference": "4b958c9c9171b895d1453437b5edeaeca4ace598"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ZevWisegroup/payplus-api/zipball/8cc350251aaf5ebc8ee0f2aabeb9a22791b16a01",
-                "reference": "8cc350251aaf5ebc8ee0f2aabeb9a22791b16a01",
+                "url": "https://api.github.com/repos/ZevWisegroup/payplus-api/zipball/4b958c9c9171b895d1453437b5edeaeca4ace598",
+                "reference": "4b958c9c9171b895d1453437b5edeaeca4ace598",
                 "shasum": ""
             },
             "type": "library",
@@ -39,9 +39,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ZevWisegroup/payplus-api/issues",
-                "source": "https://github.com/ZevWisegroup/payplus-api/tree/1.0.1"
+                "source": "https://github.com/ZevWisegroup/payplus-api/tree/1.0.2"
             },
-            "time": "2021-10-11T07:27:12+00:00"
+            "time": "2021-11-18T05:56:31+00:00"
         }
     ],
     "packages-dev": [],
