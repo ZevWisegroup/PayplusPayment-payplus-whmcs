@@ -199,9 +199,13 @@ function payplus_remoteinput($params)
     PayplusBase::$devMode = ($params['devMode'] == 'on');
     $clientDetails = $params['clientdetails'];
     $paymentPage = new PaymentPage;
+    $currencyCode = 'ILS';
+    if ($params['clientdetails']['model'] && method_exists($params['clientdetails']['model'],'getCurrencyCodeAttribute')) {
+        $currencyCode = $params['clientdetails']['model']->getCurrencyCodeAttribute();
+    }
     $paymentPage->Init([
         'payment_page_uid' =>  $params['paymentPageUID'],
-        'currency_code' => $params['clientdetails']['model']->getCurrencyCodeAttribute(),
+        'currency_code' => $currencyCode,
         'amount' => 0
     ]);
     $customer = [
